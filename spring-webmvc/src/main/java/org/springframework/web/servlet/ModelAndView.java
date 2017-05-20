@@ -345,10 +345,12 @@ public class ModelAndView {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder("ModelAndView: ");
-		if (isReference()) {
+		if (isReference())
+		{
 			sb.append("reference to view with name '").append(this.view).append("'");
 		}
-		else {
+		else
+        {
 			sb.append("materialized View is [").append(this.view).append(']');
 		}
 		sb.append("; model is ").append(this.model);
